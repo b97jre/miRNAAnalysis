@@ -3,6 +3,11 @@
 #load.package("ggplot2")
 
 library(ggplot2)
+source('/Users/johanreimegard/git/miRNAAnalysis/R/miRNAAnalysisFunctions.R')
+
+
+
+
 setwd("/Users/johanreimegard/Vetenskap/Data/Mouse_miRNAs/HTseqCount")
 
 metaData = read.table("metaDataTable.txt", sep = "\t", header = TRUE )
