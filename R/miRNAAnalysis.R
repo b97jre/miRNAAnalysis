@@ -21,9 +21,6 @@ metaDataPremiRNA = metaData[ metaData$Reference =="pre-miRNA",  ]
 length121 = read.table("up_121.lengthDistribution.tab.txt", sep = "\t", header = TRUE)
 length154 = read.table("up_154.lengthDistribution.tab.txt", sep = "\t", header = TRUE)
 AllLength = cbind(length121,length154)
-
-
-AllLength = cbind(length121,length154)
 AllLength = AllLength[,order(colnames(AllLength))]
 
 lty = c(1:length(colnames(length121)),1:length(colnames(length154)))
