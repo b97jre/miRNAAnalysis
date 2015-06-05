@@ -98,6 +98,8 @@ norm.data <- log(norm.data)
 
 mir.pca <- prcomp(t(norm.data),) 
 
+
+
 pdf(file = "PCA_1_2.pdf")
 plot(mir.pca$x[,1], mir.pca$x[,2],pch=metaDatamiRNA$DateSymbol,col= metaDatamiRNA$PhenotypeColor)  ## plot  PC1 and PC2
 text(mir.pca$x[,1], mir.pca$x[,2], rownames(mir.pca$x), cex=0.7, pos=1, col= metaDatamiRNA$PhenotypeColor) 
